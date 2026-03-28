@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(194, 150, 150,0.98);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#artists{
+  margin-bottom: 40px;
+}
+#btn{
+    margin-bottom: 40px;
+}
+#btn button a{
+    text-decoration: none;
+    background-color:  rgb(241, 140, 117);
+    color: white;
+    font-size: larger;
+}
+#btn button a:hover{
+    color: #5c1515;
+}
+#artists button a{
+text-decoration: none;
+background-color: rgb(241, 140, 117);
+color: white;
+font-size: larger;
+}
+#artists button a:hover{
+     color: #5c1515;
+}
+#link button a{
+ text-decoration: none;
+ background-color: rgb(241, 140, 117);
+ color: white;
+ font-size:larger ;
+}
+#link button a:hover{
+     color: #5c1515;
+}
+#link{
+    margin-bottom: 40px;
+}
+#tool a{
+background-color: aquamarine;
+font-size: larger;
+color: white;
+text-decoration: none;
+}
+#tool a:hover{
+    color: coral;
+}

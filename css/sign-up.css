@@ -1,0 +1,41 @@
+.form{
+    background-color:  #d3d3d3;
+    justify-self: center;
+    font-size: larger;
+}
+.form label{ 
+    display: block;
+    justify-self: center;
+}
+body{
+    background-color: rgba(194, 150, 150, 0.98);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.form form input{
+    margin-bottom: 50px;
+    width: 225px;
+    height: 32px;
+    border-radius: 5px;
+    display: block;
+    justify-self: center;
+}
+.form form p{
+    text-align: center;
+}
+.form form button{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #ede8dc;
+    display: block;
+}
+.form form button:hover{
+    color: #a5b68d;
+}
+p a{
+    text-decoration: none;
+    color: #ede8dc;
+}
+p a:hover{
+   color: greenyellow;
+}

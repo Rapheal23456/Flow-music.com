@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#welcome-banner marquee{
+    font-size: large;
+}
+body{
+    background-color: rgba(194, 150, 150,0.98);
+    color: white;
+}
+span{
+    color: rgb(243, 188, 105);
+}
+#nav-bar {
+    background-color: rgba(233, 126, 126, 0.881);
+}
+#nav-bar ul{
+     display:flex;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    padding-left:80px;
+    font-size:large;
+}
+ #nav-bar ul li a:hover{
+ color: brown;
+ text-decoration-line: underline;
+}
+img{
+width: 60px;
+height: 60px;
+}
+.key{
+    border-right: 5px solid rgb(255, 111,89);
+    border-radius: 10px;
+    border-bottom: 5px solid rgb(255, 111,89);
+    background-color: rgb(172, 160, 189);
+}
+.key a{
+    display: flex;
+   padding-right: 50px;
+   text-decoration: none;
+    border-radius: 10px;
+}
+.key a p:hover{
+    color: cyan;
+}
+.key a p{
+font-size: 25px;
+}
+.key a p{
+    padding-left: 70px;
+    color: #ffffff;
+}
+.key{
+    display: block;
+    margin-bottom: 50px;
+}
+.about {
+margin-bottom: 50px;
+margin-top: 20px;
+}
+#nav-bar .sign-in {
+    margin-left: 90%;
+}
+.sign-in button{
+     border-radius: 10px;
+}
+
+.sign-in button a {
+    font-size: x-large;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+}
+.sign-in button{
+    background-color: rgb(171, 86, 197);
+}
+.sign-in button a:hover{
+    color: tomato;
+}
+#nav-bar ul li  {
+display: flex;
+padding-left: 19px;
+padding-top : 5px;
+padding-bottom: 5px;
+}
+.sign-in {
+    margin-left: 10%;
+}
+.sign-in button a{
+    font-size: 18px;
+}
+.key a{
+    padding-right: 25px;
+}
+.key a p{
+    padding-left: 25px;
+    font-size: large;
+}
+.key{
+    margin-bottom: 38px;
+}
+.about p{
+    font-size: 21px;
+}
+footer{
+    background-color: rgba(207, 66, 66, 0.575);
+}
+footer h1{
+    font-size: larger;
+}
+ footer .display {
+    display: flex;
+    font-size: large;
+}
+footer .display #box{
+    margin-right:60px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:rgb(172, 160, 189);
+}
+footer .display #box2{
+    margin-left: 250px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 40px;
+     background-color:rgb(172, 160, 189);
+}
+footer .display div{
+    margin-top: 50px;
+}
+@media screen and (max-width:800px) {
+.welcome-banner marquee{
+    font-size: 12px;
+}
+#nav-bar ul{
+    display: block;
+}
+#nav-bar ul li a{
+    padding-left: 0;
+}
+#nav-bar .sign-in{
+    margin-left: 10%;
+}
+ body{
+        font-size: 21px;
+    }
+footer .display {
+    display: block;
+    font-size:21px;
+}
+footer .display #box{
+    margin-right:0px;
+    padding-left: 0;
+    border-radius: 5px;
+    width: 70%;
+}
+footer .display #box2{
+    margin-left: 0px;
+    border-radius: 5px;
+    padding: 0px;
+    width: 70%;
+}
+footer .display div{
+    margin-top: 15px;
+}
+footer h1{
+    font-size: 25px;
+}
+}

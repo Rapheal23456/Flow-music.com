@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(255, 99, 42,0.75);
+}
+#choice{
+    margin-top: 30px;
+}
+#choice button a{
+  color: white;  
+  text-decoration: none;
+  font-size: x-large;
+}
+#choice button{
+    background-color: rgb(213, 57, 74);
+}
+#choice button a:hover{
+    color: blueviolet;
+}
+@media screen and (max-width:800px){
+    #choice{
+    margin-top: 0px;
+}
+#choice button a{
+  color: white;  
+  text-decoration: none;
+  font-size: large;
+}
+}
