@@ -3,73 +3,161 @@
     margin: 0;
     box-sizing: border-box;
 }
-#welcome-banner marquee{
-    font-size: large;
-}
 body{
     background-color: rgba(194, 150, 150,0.98);
     color: white;
 }
-span{
-    color: rgb(243, 188, 105);
+#mode{
+    background-color: gray;
 }
-#nav-bar {
-    background-color: rgba(233, 126, 126, 0.881);
+#mode:hover{
+    color: #ffffff;
+}
+#nav-bar i.fa-solid.fa-music {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#nav-bar .logo-text{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.search-container{
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.search-container input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    padding-left: 8px;
+    font-family: 'Poppins',sans-serif;
+}
+.search-container input::placeholder{
+color: rgba(255,255,255,0.7);
+}
+#nav-bar { 
+   background-color: rgba(233, 126, 126, 0.881);
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 20px;
 }
 #nav-bar ul{
-     display:flex;
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 #nav-bar ul li a{
     text-decoration: none;
     color: white;
-    padding-left:80px;
     font-size:large;
 }
  #nav-bar ul li a:hover{
  color: brown;
  text-decoration-line: underline;
 }
-img{
-width: 60px;
-height: 60px;
+#display {
+    display: flex;
+}
+.hero-player{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.song-details h1{
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+    color: #fff;
+}
+.song-details p{
+    margin: 0 0 20px 0;
+    color: #ccc;
+}
+#display img{
+    margin-left: 400px;
+    width: 270px;
+    height: 200px;
+    margin-top: 27px;
+    border-radius: 10px;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.btn-play{
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.btn-prev,.btn-next{
+background: none;
+border: none;
+color: white;
+font-size: 1.4rem;
+cursor: pointer;
+}
+.btn-prev:hover,.btn-next:hover{
+    color: #ff6b6b;
+}
+h1{
+    margin-bottom: 20px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 23px;
+    margin-bottom: 10px;
+}
+.key img{
+width:100%;
+height: 190px;
+object-fit: cover;
+object-position: top;
+display: block;
 }
 .key{
     border-right: 5px solid rgb(255, 111,89);
-    border-radius: 10px;
+    border-radius: 20px;
     border-bottom: 5px solid rgb(255, 111,89);
     background-color: rgb(172, 160, 189);
+    overflow: hidden;
 }
 .key a{
-    display: flex;
-   padding-right: 50px;
    text-decoration: none;
     border-radius: 10px;
+    color: #ffffff;
+}
+.key a p{
+    font-size: larger;
 }
 .key a p:hover{
     color: cyan;
 }
-.key a p{
-font-size: 25px;
-}
-.key a p{
-    padding-left: 70px;
-    color: #ffffff;
-}
-.key{
-    display: block;
-    margin-bottom: 50px;
-}
 .about {
 margin-bottom: 50px;
-margin-top: 20px;
-}
-#nav-bar .sign-in {
-    margin-left: 90%;
+margin-top: 30px;
 }
 .sign-in button{
      border-radius: 10px;
 }
-
 .sign-in button a {
     font-size: x-large;
     text-decoration: none;
@@ -88,30 +176,30 @@ padding-left: 19px;
 padding-top : 5px;
 padding-bottom: 5px;
 }
-.sign-in {
-    margin-left: 10%;
+.about h1{
+    margin-bottom: 10px;
+}
+.about #intro{
+    font-size: small;
+    font-weight: 50;
+    margin-bottom: 10px;
+}
+.about #play{
+    background-color: rgba(233, 126, 126, 0.881);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 .sign-in button a{
     font-size: 18px;
 }
-.key a{
-    padding-right: 25px;
-}
-.key a p{
-    padding-left: 25px;
-    font-size: large;
-}
-.key{
-    margin-bottom: 38px;
-}
-.about p{
-    font-size: 21px;
-}
 footer{
-    background-color: rgba(207, 66, 66, 0.575);
+    background-color: rgb(33,24,52);
 }
 footer h1{
     font-size: larger;
+    text-align: center;
+    font-size: x-large;
 }
  footer .display {
     display: flex;
@@ -133,42 +221,32 @@ footer .display #box2{
 footer .display div{
     margin-top: 50px;
 }
-@media screen and (max-width:800px) {
-.welcome-banner marquee{
-    font-size: 12px;
-}
-#nav-bar ul{
-    display: block;
-}
-#nav-bar ul li a{
-    padding-left: 0;
-}
-#nav-bar .sign-in{
-    margin-left: 10%;
-}
- body{
-        font-size: 21px;
+@media screen and (max-width:800px){
+    html,body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
-footer .display {
-    display: block;
-    font-size:21px;
-}
-footer .display #box{
-    margin-right:0px;
-    padding-left: 0;
-    border-radius: 5px;
-    width: 70%;
-}
-footer .display #box2{
-    margin-left: 0px;
-    border-radius: 5px;
-    padding: 0px;
-    width: 70%;
-}
-footer .display div{
-    margin-top: 15px;
-}
-footer h1{
-    font-size: 25px;
-}
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #nav-bar ul{
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      margin-top: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .hero-player{
+        display: none;
 }
