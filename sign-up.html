@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="css/sign-up.css">
 </head>
 <body>
+    <script>
+       function myFunction(){
+        alert('Thank you for signing in!')
+       }
+    </script>
     <section class="form">
-        <form>
+        <form method="post">
             <label for="t1">First name</label>
             <input type="text" id="t1" name="first name" placeholder="First name">
             <label for="t2">Surname</label>
@@ -21,10 +26,10 @@
             <input id="e1" name="Email address" placeholder="input Email address">
             <label for="p1">Password</label>
             <input id="p1" name="Email password" placeholder="Type email password">
-            <button type="submit"><a>Sign in</a></button>
+            <button type="submit" onclick="myFunction()"><a>Sign in</a></button>
             <p>OR</p>
             <p>Already have an account?</p>
-            <p><a href="log-in.html">Log in</a></p>
+            <p><a href="Log-in.html">Log in</a></p>
             </form>
     </section>
 </body>

@@ -5,34 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flow-music.com</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" title="Img/x-icon" href="img/OIP (1).jpg">
+    <link rel="icon" type="Img/x-icon" href="img/OIP (1).jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-<header id="welcomebanner">
-  <marquee><h2>Welcome to <span>flow</span> music.com</h2></marquee>
-</header>
+<body id="toggle">
+  <script  src="JS/script.js"></script>
    <nav id="nav-bar">
+    <div class="logo">
+   <i class="fa-solid fa-music"></i>
+   <span class="logo-text">Flow Music</span>
+   </div>
     <ul>
-        <li><a href="index.html" title="Home screen">Home</a></li>
-        <li><a href="dj-mix.html" title="DJ Mix">DJ Mix</a></li>
-        <li><a href="all-artists.html" title="All Artists Display">All Artists</a></li>
-        <li><a href="naija-music.html" title="NaijaMusic">Naija Music</a></li>
-        <li><a href="albums.html" title="Albums view">Albums</a></li>
-        <li><a href="gospel-music.html" title="Gospel Music">Gospel Music</a></li>
+        <li><a href="index.html" title="Home screen"
+           onmouseover="linkFunction(this)" onmouseout="linkOut()">Home</a></li>
+        <li><a href="browse.html" title="Browse" 
+          onmouseover="linkFunction(this)" onmouseout="linkOut()">Browse</a></li>
+        <li><a href="albums.html" title="Albums" 
+          onmouseover="linkFunction(this)" onmouseout="linkOut()">Albums</a></li>
+        <li><a href="all-artists.html" title="Artists" 
+          onmouseover="linkFunction(this)" onmouseout="linkOut()">Artists</a></li>
+        <li><a href="playlists.html" title="Playlists" 
+          onmouseover="linkFunction(this)" onmouseout="linkOut()">Playlists</a></li>
     </ul>
+    <div class="search-container">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+     <input type="search" placeholder="Search songs or artists..." 
+     size="20" onkeypress="search(event)">
+    </div>
     <div class="sign-in">
       <button><a href="sign-up.html">Sign Up</a></button>
+      <button onclick="myToggle(); addFunction(); alert('Mode changed');" id="mode">Mode</button>
     </div>
   </nav>
+  <section id="display">
   <div class="about">
-   <p>
-      A place with all the latest hits and more.<br>
-      Discover new beats and hottest tracks on our music website.<br>
-       Explore the world of music with us!Get ready to groove!<br>
-       Our music website features the latest DJ<br>
-        mixes, artist spotlights, and more.
-   </p>
+    <p id="intro">GOOD MUSIC. BETTER VIBES.</p>
+    <h1>Discover Your<br>Next Favourite</h1>
+    <p>stream,explore,and enjoy the best music<br>
+      from your Favourite artist-all in one place.</p>
+      <button id="play">Play Now</button>
    </div>
+   <div class="hero-player">
+   <img src="img/HOAH.jpg" alt="Albulm cover">
+   <div class="song-details">
+    <h1>Heart of a human</h1>
+    <p>DOE</p>
+    <div class="controls">
+      <button class="btn-prev"><i class="fa-solid fa-backward-step"></i></button>
+      <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+      <button class="btn-next"><i class="fa-solid fa-forward-step"></i></button>
+    </div>
+    </div>
+   </div>
+   </section>
+   <h1>Latest Releases</h1>
+   <section>
   <button class="key">
     <a href="naija-music.html" title="selection" >
     <img src="img/rema pic1.jpg" alt="rema picture">
@@ -118,9 +145,10 @@
                           <p>Turbulence by Wiskid Ft Asake</p>
                         </a>
                       </button>
+                      </section>
                       <footer>
-                         <h1>You want to start advertising<br> your businesses
-                           on our <br>website but don't know how?</h1>
+                         <h1>You want to start advertising your businesses
+                           on our website but don't know how?</h1>
                          <section class="display"> 
                            <div id="box">
                              <p>
